@@ -1,0 +1,35 @@
+{
+  "name": "simple-rating-site",
+  "version": "1.0.0",
+  "description": "Simple Rating Site in React",
+  "main": "index.js",
+  "scripts": {
+    "devServer": "webpack-dev-server",
+    "dev": "webpack -w --progress"
+  },
+  "author": "Dan Steinberg",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "immutability-helper": "^2.6.2",
+    "jsonp": "^0.2.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "socket.io-client": "^2.0.4",
+    "style-loader": "^0.19.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "classnames": "2.2.1",
+    "copy": "^0.1.3",
+    "copy-webpack-plugin": "^3.0.1",
+    "express": "^4.13.3",
+    "file-loader": "^0.9.0",
+    "react-addons-update": "^0.14.3",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.2"
+  }
+}
