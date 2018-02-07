@@ -22,7 +22,10 @@ export default class ShowSurveyOffer extends Component {
 				<div>
 					<div>Congratulations! There's a survey for you to take!</div>
 					<div>This survey's is reward is from {this.props.offerMin} to {this.props.offerMax} {this.props.offerCurrency}</div>
-					<div>Click Here to take this survey: <a href={this.props.offerUrl}>{this.props.offerUrl}</a></div>
+					<div>
+						<a href={this.props.offerUrl} target="_blank">Click Here</a>
+						<span> to take the survey</span>
+					</div>
 				</div>
 		}
 
