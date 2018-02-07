@@ -13,6 +13,7 @@
     "css-loader": "^0.28.7",
     "immutability-helper": "^2.6.2",
     "jsonp": "^0.2.1",
+    "prop-types": "^15.6.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "socket.io-client": "^2.0.4",

@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import update from "immutability-helper";
 
-import GetSurveyWidget from "./components/GetSurveyWidget.js"
+import GetSurveyWidget from "./components/GetSurveyWidget.jsx"
 
 import '../css/main.css';
 
+const appToken = "9a7fb35fb5e0daa7dadfaccd41bb7ad1";
 
 class App extends Component {
 
@@ -18,7 +19,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="main-container">
-				<GetSurveyWidget/>
+				<GetSurveyWidget appToken={appToken}/>
 			</div>
 		);
 	}

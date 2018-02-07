@@ -12,7 +12,7 @@ This repo contains a Survey Page App, that allows the user to enter a user ID co
    `npm install`
    `npm run devServer`
    This will build the test UI for the app and open a web server for it
-5. Open a browser, and navigate to the URL [http://localhost:9000].  Enter the User ID "" in the input box and click the "Get Survey Offer" button.
+5. Open a browser, and navigate to the URL [http://localhost:9000].  Enter the User ID "tapresearch" in the input box and click the "Get Survey Offer" button.
 
 This program has been tested in Windows 10 and on Chrome, Firefox, and Edge browsers. If you have any questions, please contact me [DanSt3@gmail.com](mailto:DanSt3@gmail.com)
 

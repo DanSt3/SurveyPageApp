@@ -6,11 +6,11 @@ var OUTPUT_DIR = path.resolve(__dirname + '/dist')
 
 
 module.exports = {
-    entry: APP_DIR + '/main.js',
+    entry: APP_DIR + '/main.jsx',
 
     output: {
         path: OUTPUT_DIR,
-        filename: 'js/main.js'
+        filename: 'js/main.jsx'
     },
 
     plugins: [
@@ -28,9 +28,13 @@ module.exports = {
         port: 9000
     },
 
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
+    
     module : {
         loaders: [{
-            test: /\.js?$/,
+            test: /\.jsx?$/,
             include: APP_DIR,
             exclude: /node_modules/,
             loader: 'babel',
@@ -39,7 +43,8 @@ module.exports = {
             },
         },
         {
-            test: /\.css$/, loader: "style-loader!css-loader" 
+            test: /\.css$/,
+            loader: "style-loader!css-loader" 
         },
         {
             test: /\.((ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9]))|(ttf|eot)$/,
