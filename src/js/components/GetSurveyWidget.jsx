@@ -97,11 +97,11 @@ export default class GetSurveyWidget extends Component {
 		const offer = this.state.surveyOffer;
 		const hasOffer = (offer && offer.has_offer);
 		const offerUrl = (offer && offer.offer_url);
-		const offerMin = (offer && offer.message_hash && offer.message_hash.min) ?
-			parseFloat(offer.message_hash.min) : undefined;
-		const offerMax = (offer && offer.message_hash && offer.message_hash.max) ?
-			parseFloat(offer.message_hash.max) : undefined;
-		const offerCurrency = (offer && offer.message_hash && offer.message_hash.currency);
+		const offerMin = (offer && offer.message_hash && offer.message_hash.min_payout_in_currency) ?
+			parseFloat(offer.message_hash.min_payout_in_currency) : undefined;
+		const offerMax = (offer && offer.message_hash && offer.message_hash.max_payout_in_currency) ?
+			parseFloat(offer.message_hash.max_payout_in_currency) : undefined;
+		const offerCurrency = (offer && offer.message_hash && offer.message_hash.currency_name);
 
 		return (
 			<div className="get-survey-widget centered">
