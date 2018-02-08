@@ -1,0 +1,18 @@
+.show-survey-offer {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.offer-display > div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.no-offer {
+    text-align: center;
+}
+
+.offer-header {
+    font-weight: bold;
+}

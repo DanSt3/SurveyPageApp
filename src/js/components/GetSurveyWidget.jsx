@@ -104,13 +104,16 @@ export default class GetSurveyWidget extends Component {
 		const offerCurrency = (offer && offer.message_hash && offer.message_hash.currency);
 
 		return (
-			<div className="get-survey-widget">
-				<label>
-				Enter User ID Code: 
-					<input type="text" value={this.state.userId} onChange={this._handleUserIdChange} />
-					<button onClick={this._getSurveyOffer}>Get Survey</button>
-					<div>{this.state.errorMsg}</div>
-					{(offer) ? 
+			<div className="get-survey-widget centered">
+				<div className="id-entry-container">
+					<label>
+						Enter User ID Code: 
+						<input type="text" className="user-id-input" value={this.state.userId} onChange={this._handleUserIdChange} />
+					</label>
+				</div>
+				<button className="get-survey-button" onClick={this._getSurveyOffer}>Get Survey</button>
+				<div className="errors">{this.state.errorMsg}</div>
+				{(offer) ? 
 						<ShowSurveyOffer hasOffer={hasOffer}
 							offerUrl={offerUrl}
 							offerMin={offerMin}
@@ -118,7 +121,6 @@ export default class GetSurveyWidget extends Component {
 							offerCurrency={offerCurrency}/>
 						: null
 					}
-				</label>
 			</div>
 		)
 	}

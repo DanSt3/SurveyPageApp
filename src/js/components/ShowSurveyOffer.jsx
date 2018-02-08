@@ -18,15 +18,16 @@ export default class ShowSurveyOffer extends Component {
 	render() {
 		var display = <div className="no-offer">No survey available</div>;
 		if (this.props.hasOffer) {
-			display = 
-				<div>
-					<div>Congratulations! There's a survey for you to take!</div>
+			display = (
+				<div className="offer-display">
+					<div><span className="offer-header">Congratulations!</span> There's a survey for you to take!</div>
 					<div>This survey's is reward is from {this.props.offerMin} to {this.props.offerMax} {this.props.offerCurrency}</div>
 					<div>
 						<a href={this.props.offerUrl} target="_blank">Click Here</a>
 						<span> to take the survey</span>
 					</div>
 				</div>
+			);
 		}
 
 		return (
